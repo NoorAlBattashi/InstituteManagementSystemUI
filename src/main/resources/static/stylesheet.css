@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* navbar */
+body{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+background: url(bg.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+}
+header{
+position: absolute;
+top: 0;
+left: 0;
+padding: 0 100px;
+background: #262626;
+width: 100%;
+box-sizing: border-box;
+}
+header .logo{
+color: #fff;
+height: 50px;
+line-height: 50px;
+font-size: 24px;
+float: left;
+font-weight: bold;
+}
+header nav{
+    float: right;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+    position: relative;
+}
+header nav ul li.sub-menu:before{
+    content: '\f0d7';
+    font-family: fontAwesome;
+    position: absolute;
+    line-height: 50px;
+    color: #fff;
+    right: 5px;
+}
+header nav ul li.active.sub-menu:before{
+    content: '\f0d8';
+}
+header nav ul li ul{
+    position: absolute;
+    left: 0;
+    background: #333;
+    display: none;
+}
+header nav ul li.active ul{
+    display: block;
+}
+header nav ul li ul li{
+    display: block;
+    width: 200px;
+}
+header nav ul li a{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+header nav ul li a:hover,
+header nav ul li a.active{
+    color: #fff;
+    background: #2196f3;
+}
+.menu-toggle{
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+/* standerd form */
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid #5a5959;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 0px 5px rgba(160, 158, 158, 0.8);
+}
+h2{
+    font-size: 2em;
+    color: #5a5959;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #5a5959;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #5a5959;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+.inputbox input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #5a5959;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #5a5959;
+    font-size: 1.2em;
+    top: 20px;
+}
+#submit{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #5a5959;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+    box-shadow: 5px 5px 20px 1px rgba(160, 158, 158, 0.8);
+}
+#name-input, #email-input{
+    pointer-events: none;
+}
+/* search-bar */
+.staffInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    width: 100%;
+}
+.staffInfo .form-box{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background: transparent;
+    border: 2px solid #5a5959;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 0px 5px rgba(160, 158, 158, 0.8);
+}
+.container{
+    width: 100%;
+    min-height: 35vh;
+    padding: 1px 1px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar{
+    width: 100%;
+    max-width: 250px;
+    background: rgba(42, 41, 41, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+.search-bar input{
+    width: 100%;
+    height:1px;
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px  20px;
+    font-size: 20px;
+    color:#393838;
+}
+.search-bar button img{
+    width: 30px;
+
+}
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: white;
+    cursor: pointer;
+}
+
+@media (max-width: 991px){
+    header{
+        padding: 0 20px;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    header nav{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #333;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+        z-index: 10;
+    }
+    header nav.active{
+        left: 0;
+    }
+    header nav ul{
+        display: block;
+        text-align: center;
+    }
+    header nav ul li a{
+        border-bottom: 1px solid rgba(0,0,0,.2);
+    }
+    header nav ul li.active ul{
+        position: relative;
+        background: #494949;
+    }
+    header nav ul li ul li{
+        width: 100%;
+    }
+    .form-box{
+        z-index: 5;
+    }
+}

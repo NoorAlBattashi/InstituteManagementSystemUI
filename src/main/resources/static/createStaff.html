@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function(){
+        $(".header").load("index.html");
+      });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Create Staff</title>
+<body>
+</head>
+  <header>
+    <div class="header"></div>
+  </header>
+  <section>
+    <div class="form-box">
+      <div class="form-value">
+        <form>
+          <h2>Create Staff</h2>
+          <div class="inputbox">
+            <ion-icon name="person-add-outline"></ion-icon>
+            <input type="text" name="name" required>
+            <label for="">Full Name</label>
+          </div>
+          <div class="inputbox">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input type="email" name="email" required>
+            <label for="">Email</label>
+          </div>
+          <button id="submit">Submit</button>       
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="createStaff.js"></script>
+</body>
+</html>

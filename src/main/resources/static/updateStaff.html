@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="updateStyle.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+      $(function(){
+        $(".header").load("index.html");
+      });
+    </script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Update Staff Details</title>
+</head>
+<body>
+  <header>
+    <div class="header"></div>   
+</header>
+<div class="container">
+  <form action="http://localhost:8080/api/teacher/{id}" method="GET" class="search-bar" id="search-form">
+    <input type="number" placeholder="Search by id" name="id" id="search-input">
+    <button type="submit"><img src="search-icon.png" alt="search-icon"></button>
+  </form>
+</div>
+<section>
+  <div class="form-box">
+    <div class="form-value">
+      <form action="" id="result-form">
+        <h2>Update Staff</h2>
+        <br>
+        <div class="inputbox">
+          <input type="text" name="name" id="name_input">
+          <label for="">Full Name</label>
+        </div>
+        <div class="inputbox">
+          <input type="email" name="email" id="email_input">
+          <label for="">Email</label>
+        </div>
+        <button id="submit">Update</button>      
+      </form>
+    </div>
+  </div>
+</section>
+<script src="updateStaff.js"></script>
+</body>
+</html>
