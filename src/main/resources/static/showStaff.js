@@ -9,12 +9,27 @@ document.addEventListener("DOMContentLoaded", function(){
         event.preventDefault();
     
         const id = searchInput.value;
-        fetch(`http://localhost:8080/api/teacher/${id}`)
-        .then(response => response.json())
+        const auth = localStorage.getItem("Authorization");
+        fetch(`http://localhost:8080/api/teacher/${id}`, {
+            method:'GET',
+            headers: {
+                "Content-Type": "application/json;charset=UTF-8",
+                Authorization: `Basic ${auth}`,
+              },  
+        })
+        .then(response => {
+            if (response.status === 401){
+                window.location.href = 'http://localhost:8080/login.html';
+            }
+            return response.json();
+        })
         .then(data =>{
             nameInput.value = data.name;
             emailInput.value = data.email;
         })
-        .catch(error => console.error(error))
+        .catch(error => {
+            alert(`Staff not found`);
+            console.error(error);
+        });
     });
 });

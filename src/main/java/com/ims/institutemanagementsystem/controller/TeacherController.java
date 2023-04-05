@@ -49,21 +49,19 @@ public class TeacherController {
 
     /**
      * Endpoint for creating a new teacher.
-     * @param name, email The Teacher object containing the information for the new teacher
+     * @param newTeacher The Teacher object containing the information for the new teacher
      * @return The newly created Teacher object
      */
     @PostMapping
-    public ResponseEntity<Teacher> createTeacher(@RequestParam String name, @RequestParam String email) {
+    public ResponseEntity<Teacher> createTeacher(@RequestBody Teacher newTeacher) {
         try {
-            Teacher newTeacher = new Teacher();
-            newTeacher.name = name;
-            newTeacher.email = email;
             Teacher createdTeacher = teacherService.createTeacher(newTeacher);
             return new ResponseEntity<>(createdTeacher, HttpStatus.CREATED);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
 
     /**
      * Endpoint for updating an existing teacher.

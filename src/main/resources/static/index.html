@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+          <script type="text/javascript">
+            const authToken = localStorage.getItem("Authorization");
+            if (!authToken) {
+                window.location.href = "http://localhost:8080/login.html";
+            }
+        </script>
     <title>IMS</title>
 </head>
 <body>
@@ -12,14 +18,14 @@
     <div class="logo">Institute Management System</div>
     <nav class="active">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="http://localhost:8080/index.html">Home</a></li>
             <li><a href="#">About</a></li>
             <li class="sub-menu"><a href="#">Staff</a>
                 <ul>
-                    <li><a href="showStaff.html">Show Staff Info</a></li>
-                    <li><a href="createStaff.html">Create Staff</a></li>
-                    <li><a href="updateStaff.html">Update Staff </a></li>
-                    <li><a href="deleteStaff.html">Delete Staff</a></li>
+                    <li><a href="http://localhost:8080/showStaff.html">Show Staff Info</a></li>
+                    <li><a href="http://localhost:8080/createStaff.html">Create Staff</a></li>
+                    <li><a href="http://localhost:8080/updateStaff.html">Update Staff </a></li>
+                    <li><a href="http://localhost:8080/deleteStaff.html">Delete Staff</a></li>
                 </ul>
             </li>
             <li class="sub-menu"><a href="#">Student</a>
@@ -30,6 +36,8 @@
                     <li><a href="#">Delete Student</a></li>
                 </ul>
             </li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="login.html">logout</a></li>
         </ul>
     </nav>
     <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
@@ -46,5 +54,14 @@
         })
     })
 </script>
+<script>
+    const logoutButton = document.querySelector("a[href='login.html']");
+  
+    logoutButton.addEventListener("click", function(event) {
+      event.preventDefault();
+      localStorage.clear();
+      window.location.href = "http://localhost:8080/login.html";
+    });
+  </script>
 </body>
 </html>
