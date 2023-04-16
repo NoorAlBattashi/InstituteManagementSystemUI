@@ -2,16 +2,19 @@ document.querySelector('#submit').addEventListener('click', async (e) => {
   e.preventDefault(); // prevent form submission
   let name = document.querySelector('input[name="name"]').value;
   let email = document.querySelector('input[name="email"]').value;
+  let image = document.querySelector('input[name="image"]').files[0];
   const auth = localStorage.getItem('Authorization');
-
+  let currForm = new FormData();
+  currForm.append("name", name);
+  currForm.append("email", email);
+  currForm.append("image", image);
   try {
-    const response = await fetch('http://localhost:8080/api/teacher', {
+    const response = await fetch('http://localhost:8080/api/teacher/withImage', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json;charset=UTF-8',
         Authorization: `Basic ${auth}`,
       },
-      body: JSON.stringify({ name, email }),
+      body: currForm,
     });
 
     if (response.ok) {
@@ -24,7 +27,7 @@ document.querySelector('#submit').addEventListener('click', async (e) => {
       console.log('Teacher created:', responseData);
     } else if (response.status === 401) {
       // redirect to login page
-      window.location.replace('http://localhost:8080/login');
+      window.location.replace('/login.html');
     }
   } catch (error) {
     console.error('Error creating teacher:', error);

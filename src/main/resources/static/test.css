@@ -6,7 +6,7 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    background: url(bg.jpg);
+    background: url(/bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -26,6 +26,7 @@ header{
     background: #262626;
     width: 100%;
     box-sizing: border-box;
+    z-index: 2; /* Added z-index property */
     }
     header .logo{
     color: #fff;
@@ -63,6 +64,7 @@ header{
         left: 0;
         background: #333;
         display: none;
+        z-index: 3; /* Added z-index property */
     }
     header nav ul li.active ul{
         display: block;
@@ -93,8 +95,22 @@ header{
         display: none;
     }
 /* table */
-
-td img {
+.table__body::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.table__body::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+.table__body:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+table{
+    width: 100%;
+}
+tr img {
     width: 36px;
     height: 36px;
     margin-right: .5rem;
@@ -102,10 +118,12 @@ td img {
     vertical-align: middle;
 }
 table, th, td{
+    border-collapse: collapse;
     padding: 1rem;
-
+    text-align: left;
 }
 main.table{
+    margin-top: 7vh;
     width: 82vw;
     height: 90vh;
     background-color: #fff5;
@@ -123,11 +141,35 @@ main.table{
 }
 .table__body{
     width: 95%;
-    max-height: 89%;
+    max-height: calc(89% - 1.6rem);
     background-color: #fffb;
+
+    margin: .8rem auto;
+    border-radius: .6rem;
+
+    overflow: auto;
 }
 thead{
     margin-bottom: 0;
+}
+thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #827e7e3e;
+}
+tbody tr:nth-child(even){
+    background-color: #0000000b;
+}
+tbody tr:hover{
+    background-color: #fff6;
+}
+section .table__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 1vh;
+    width: 100%;
 }
 @media (max-width: 991px){
     header{
@@ -165,5 +207,9 @@ thead{
     }
     .form-box{
         z-index: 5;
+    }
+    td:not(:first-of-type){
+        min-width: 12.1rem;
+
     }
 }

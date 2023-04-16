@@ -12,7 +12,7 @@ searchForm.addEventListener('submit', async (event) =>{
         }
     });
     if(response.status === 401){
-        window.location.href = 'http://localhost:8080/login.html';
+        window.location.href = '/login.html';
     }else if (response.ok){
         const teacher = await response.json();
         document.getElementById('name_input').value = teacher.name;
@@ -34,7 +34,7 @@ resultForm.addEventListener('submit', async (event) =>{
         }
     });
     if(response.status === 401){
-        window.location.href = "http://localhost:8080/login"; // replace with the URL of your login page
+        window.location.href = "/login.html";
     } else if(response.ok){
         alert('Staff deleted successfully');
         // clear the result form after successful deletion
