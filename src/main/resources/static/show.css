@@ -308,11 +308,6 @@ section .table__header {
     header nav ul li ul li {
         width: 100%;
     }
-
-    .form-box {
-        z-index: 5;
-    }
-
     td:not(:first-of-type) {
         min-width: 12.1rem;
 

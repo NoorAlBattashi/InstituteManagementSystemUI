@@ -25,6 +25,7 @@ line-height: 50px;
 font-size: 24px;
 float: left;
 font-weight: bold;
+z-index: 3; /* Added z-index property */
 }
 header nav{
     float: right;
@@ -54,6 +55,7 @@ header nav ul li ul{
     left: 0;
     background: #333;
     display: none;
+    z-index: 3; /* Added z-index property */
 }
 header nav ul li.active ul{
     display: block;
@@ -209,6 +211,7 @@ input:valid ~ label{
 @media (max-width: 991px){
     header{
         padding: 0 20px;
+        z-index: 3;
     }
     .menu-toggle{
         display: block;
@@ -239,8 +242,5 @@ input:valid ~ label{
     }
     header nav ul li ul li{
         width: 100%;
-    }
-    .form-box{
-        z-index: 5;
     }
 }
