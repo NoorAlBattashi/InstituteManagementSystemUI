@@ -843,3 +843,6 @@
 2023-04-19 09:47:20.266 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 2023-04-19 09:47:20.300 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2023-04-19 09:47:20.316 INFO  c.i.i.InstituteManagementSystemApplication - Started InstituteManagementSystemApplication in 7.475 seconds (process running for 8.549)
+2023-04-19 09:49:14.114 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 09:49:14.118 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-19 09:49:14.131 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
