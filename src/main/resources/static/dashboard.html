@@ -29,7 +29,7 @@
                     <ul>
                         <li><a href="/student/showStudent.html">Show Student Info</a></li>
                         <li><a href="/student/createStudent.html">Create Student</a></li>
-                        <li><a href="#">Update Student </a></li>
+                        <li><a href="/student/updateStudent.html">Update Student </a></li>
                         <li><a href="/student/deleteStudent.html">Delete Student</a></li>
                     </ul>
                 </li>
@@ -54,10 +54,28 @@
                         <th>Staff Email</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="staff-tbody">
                 </tbody>
             </table>
         </section>
+        <section class="table__header">
+            <h1>Student</h1>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Student Profile</th>
+                        <th>Student Name</th>
+                        <th>Student Email</th>
+                    </tr>
+                </thead>
+                <tbody id="student-tbody">
+                </tbody>
+            </table>
+        </section>
+        <section class="table__body">
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript">

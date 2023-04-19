@@ -102,13 +102,15 @@ public class StudentController {
      * Endpoint for updating an existing student.
      *
      * @param id          The ID of the student to be updated
-     * @param currStudent The updated Student object
      * @return The updated Student object
      */
     @PutMapping(path = "/{id}")
-    public ResponseEntity<Optional<Student>> updateStudent(@PathVariable(name = "id") int id, @RequestBody Student currStudent) {
+    public ResponseEntity<Optional<Student>> updateStudent(@PathVariable(name = "id") int id, @RequestParam String name, @RequestParam String email) {
         try {
-            Optional<Student> updatedStudent = studentService.updateParticularStudent(id, currStudent);
+            Student UpdateStudent = new Student();
+            UpdateStudent.name = name;
+            UpdateStudent.email = email;
+            Optional<Student> updatedStudent = studentService.updateParticularStudent(id, UpdateStudent);
             return ResponseEntity.ok(updatedStudent);
         } catch (NoSuchElementException e) {
             return ResponseEntity.notFound().build();

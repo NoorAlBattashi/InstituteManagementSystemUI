@@ -282,3 +282,564 @@
 2023-04-19 08:44:43.009 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-04-19 08:44:43.013 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2023-04-19 08:44:43.033 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-19 09:11:26.694 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-19 09:11:26.770 INFO  c.i.i.InstituteManagementSystemApplication - Starting InstituteManagementSystemApplication using Java 17.0.2 with PID 11280 (C:\Users\LAP-9\Documents\FrontEndArea\institute-management-system\institute-management-system\target\classes started by LAP-9 in C:\Users\LAP-9\Documents\FrontEndArea\institute-management-system\institute-management-system)
+2023-04-19 09:11:26.772 INFO  c.i.i.InstituteManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-19 09:11:28.002 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-19 09:11:28.097 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 2 JPA repository interfaces.
+2023-04-19 09:11:28.903 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-19 09:11:28.915 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-19 09:11:28.916 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-19 09:11:28.916 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-19 09:11:29.032 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-19 09:11:29.033 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2191 ms
+2023-04-19 09:11:29.283 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-19 09:11:29.372 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-19 09:11:29.576 WARN  org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-04-19 09:11:29.765 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-19 09:11:29.965 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4efb13f1
+2023-04-19 09:11:29.967 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-19 09:11:30.024 INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-19 09:11:30.807 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-19 09:11:30.823 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 09:11:31.319 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-19 09:11:31.597 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 18 mappings in 'requestMappingHandlerMapping'
+2023-04-19 09:11:32.289 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-04-19 09:11:32.293 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@57fae911, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52a0bc48, org.springframework.security.web.context.SecurityContextHolderFilter@2a9e7b4d, org.springframework.security.web.header.HeaderWriterFilter@29ae2517, org.springframework.web.filter.CorsFilter@28941a68, org.springframework.security.web.authentication.logout.LogoutFilter@10b5ff4d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@14ee143a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e1104f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76219fe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24ce5d4c, org.springframework.security.web.access.ExceptionTranslationFilter@4423692a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4c6eaa65]
+2023-04-19 09:11:32.296 WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/static/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-19 09:11:32.296 INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/static/**']
+2023-04-19 09:11:32.402 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-04-19 09:11:32.442 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-04-19 09:11:32.601 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-19 09:11:32.662 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-19 09:11:32.672 INFO  c.i.i.InstituteManagementSystemApplication - Started InstituteManagementSystemApplication in 6.391 seconds (process running for 7.226)
+2023-04-19 09:11:48.399 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 09:11:48.399 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-19 09:11:48.399 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-04-19 09:11:48.399 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2023-04-19 09:11:48.399 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2023-04-19 09:11:48.399 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1c7fd2e0
+2023-04-19 09:11:48.399 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6705fb02
+2023-04-19 09:11:48.399 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-04-19 09:11:48.399 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-04-19 09:11:48.430 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:11:48.462 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:11:48.622 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/teacher", parameters={}
+2023-04-19 09:11:48.622 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:11:48.634 INFO  c.i.i.service.TeacherService - Getting all the teachers
+2023-04-19 09:11:48.816 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:11:48.816 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.ims.institutemanagementsystem.model.Teacher@78785585]]
+2023-04-19 09:11:48.856 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:13:12.201 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 09:13:12.201 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-19 09:13:12.216 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-19 09:13:15.624 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-19 09:13:15.666 INFO  c.i.i.InstituteManagementSystemApplication - Starting InstituteManagementSystemApplication using Java 17.0.2 with PID 3512 (C:\Users\LAP-9\Documents\FrontEndArea\institute-management-system\institute-management-system\target\classes started by LAP-9 in C:\Users\LAP-9\Documents\FrontEndArea\institute-management-system\institute-management-system)
+2023-04-19 09:13:15.666 INFO  c.i.i.InstituteManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-19 09:13:16.720 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-19 09:13:16.801 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+2023-04-19 09:13:17.527 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-19 09:13:17.542 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-19 09:13:17.544 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-19 09:13:17.544 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-19 09:13:17.671 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-19 09:13:17.671 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1940 ms
+2023-04-19 09:13:17.886 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-19 09:13:17.966 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-19 09:13:18.195 WARN  org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-04-19 09:13:18.380 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-19 09:13:18.572 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f93f4c
+2023-04-19 09:13:18.573 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-19 09:13:18.631 INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-19 09:13:19.455 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-19 09:13:19.465 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 09:13:19.915 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-19 09:13:20.155 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 18 mappings in 'requestMappingHandlerMapping'
+2023-04-19 09:13:21.081 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-04-19 09:13:21.088 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@40ebb56, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b2fc2c0, org.springframework.security.web.context.SecurityContextHolderFilter@4853f592, org.springframework.security.web.header.HeaderWriterFilter@37b5a51c, org.springframework.web.filter.CorsFilter@33197c2f, org.springframework.security.web.authentication.logout.LogoutFilter@180e33b0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@539bb233, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d035ab6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3407ded1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24e79a4d, org.springframework.security.web.access.ExceptionTranslationFilter@61f08aa9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1db9c2cf]
+2023-04-19 09:13:21.101 WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/static/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-19 09:13:21.102 INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/static/**']
+2023-04-19 09:13:21.198 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-04-19 09:13:21.242 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-04-19 09:13:21.425 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-19 09:13:21.453 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-19 09:13:21.463 INFO  c.i.i.InstituteManagementSystemApplication - Started InstituteManagementSystemApplication in 6.204 seconds (process running for 6.972)
+2023-04-19 09:13:30.412 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 09:13:30.412 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-19 09:13:30.412 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-04-19 09:13:30.412 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2023-04-19 09:13:30.412 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2023-04-19 09:13:30.412 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@65dd2191
+2023-04-19 09:13:30.420 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@a36ff0b
+2023-04-19 09:13:30.420 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-04-19 09:13:30.420 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2023-04-19 09:13:30.469 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:13:30.509 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:13:31.009 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/teacher", parameters={}
+2023-04-19 09:13:31.018 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:13:31.034 INFO  c.i.i.service.TeacherService - Getting all the teachers
+2023-04-19 09:13:31.372 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:13:31.372 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.ims.institutemanagementsystem.model.Teacher@b76fc1e]]
+2023-04-19 09:13:31.459 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:13:39.398 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:13:39.407 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:13:39.632 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student/2", parameters={}
+2023-04-19 09:13:39.632 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:13:39.680 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:13:39.680 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.ims.institutemanagementsystem.model.Student@7d842dee]
+2023-04-19 09:13:39.680 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:13:45.251 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:13:45.254 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:13:45.481 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student/3", parameters={}
+2023-04-19 09:13:45.481 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:13:45.490 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:13:45.496 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+2023-04-19 09:13:45.496 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2023-04-19 09:13:47.281 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:13:47.499 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student/3", parameters={}
+2023-04-19 09:13:47.499 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:13:47.514 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:13:47.514 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+2023-04-19 09:13:47.514 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2023-04-19 09:13:48.503 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:13:48.728 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student/3", parameters={}
+2023-04-19 09:13:48.733 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:13:48.736 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:13:48.739 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+2023-04-19 09:13:48.739 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2023-04-19 09:13:48.988 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:13:49.189 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student/3", parameters={}
+2023-04-19 09:13:49.189 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:13:49.204 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:13:49.205 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+2023-04-19 09:13:49.206 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2023-04-19 09:13:49.315 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:13:49.519 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student/3", parameters={}
+2023-04-19 09:13:49.519 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:13:49.527 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:13:49.527 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+2023-04-19 09:13:49.535 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2023-04-19 09:14:12.494 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:14:12.500 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:14:12.720 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student/3", parameters={}
+2023-04-19 09:14:12.720 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:14:12.728 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:14:12.728 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+2023-04-19 09:14:12.728 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2023-04-19 09:14:34.578 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:14:34.585 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:14:34.814 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student/3", parameters={}
+2023-04-19 09:14:34.816 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:14:34.816 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:14:34.816 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+2023-04-19 09:14:34.816 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2023-04-19 09:14:55.287 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:14:55.293 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:14:55.517 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student/4", parameters={}
+2023-04-19 09:14:55.517 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:14:55.517 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:14:55.517 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.ims.institutemanagementsystem.model.Student@1a0c029a]
+2023-04-19 09:14:55.533 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:15:07.946 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#updateStudent(int, Student)
+2023-04-19 09:15:07.954 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#updateStudent(int, Student)
+2023-04-19 09:15:08.188 DEBUG o.s.web.servlet.DispatcherServlet - PUT "/api/student/4?name=Ahmed&email=ahmed%40gmail.com", parameters={masked}
+2023-04-19 09:15:08.188 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#updateStudent(int, Student)
+2023-04-19 09:15:08.236 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to []
+2023-04-19 09:15:08.236 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.util.Optional<com.ims.institutemanagementsystem.model.Student>> com.ims.institutemanagementsystem.controller.StudentController.updateStudent(int,com.ims.institutemanagementsystem.model.Student)]
+2023-04-19 09:15:08.251 DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2023-04-19 09:15:08.251 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for PUT "/error?name=Ahmed&email=ahmed%40gmail.com", parameters={masked}
+2023-04-19 09:15:08.267 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-04-19 09:15:08.283 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:15:08.283 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Wed Apr 19 09:15:08 GST 2023, status=400, error=Bad Request, path=/api/student/4}]
+2023-04-19 09:15:08.303 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 400
+2023-04-19 09:15:20.520 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:15:20.528 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:15:20.751 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student/4", parameters={}
+2023-04-19 09:15:20.751 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:15:20.759 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:15:20.764 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.ims.institutemanagementsystem.model.Student@ee190a9]
+2023-04-19 09:15:20.764 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:15:23.237 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:15:23.242 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:15:23.431 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student/4", parameters={}
+2023-04-19 09:15:23.431 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:15:23.444 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:15:23.444 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.ims.institutemanagementsystem.model.Student@6ff4ed76]
+2023-04-19 09:15:23.444 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:15:35.448 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:15:35.455 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:15:35.645 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student/4", parameters={}
+2023-04-19 09:15:35.645 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:15:35.661 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:15:35.661 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.ims.institutemanagementsystem.model.Student@66548b88]
+2023-04-19 09:15:35.664 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:16:32.242 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:16:32.242 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:16:32.302 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student/4", parameters={}
+2023-04-19 09:16:32.314 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:16:32.315 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:16:32.315 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.ims.institutemanagementsystem.model.Student@6a82b96c]
+2023-04-19 09:16:32.315 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:16:37.323 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#updateStudent(int, Student)
+2023-04-19 09:16:37.328 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#updateStudent(int, Student)
+2023-04-19 09:16:37.385 DEBUG o.s.web.servlet.DispatcherServlet - PUT "/api/student/4?name=Ahmed&email=ahmed%40gmail.com", parameters={masked}
+2023-04-19 09:16:37.385 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#updateStudent(int, Student)
+2023-04-19 09:16:37.400 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to []
+2023-04-19 09:16:37.400 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.util.Optional<com.ims.institutemanagementsystem.model.Student>> com.ims.institutemanagementsystem.controller.StudentController.updateStudent(int,com.ims.institutemanagementsystem.model.Student)]
+2023-04-19 09:16:37.400 DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2023-04-19 09:16:37.400 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for PUT "/error?name=Ahmed&email=ahmed%40gmail.com", parameters={masked}
+2023-04-19 09:16:37.400 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-04-19 09:16:37.400 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:16:37.400 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Wed Apr 19 09:16:37 GST 2023, status=400, error=Bad Request, path=/api/student/4}]
+2023-04-19 09:16:37.400 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 400
+2023-04-19 09:19:11.798 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 09:19:11.801 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-19 09:19:11.814 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-19 09:19:16.121 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-19 09:19:16.171 INFO  c.i.i.InstituteManagementSystemApplication - Starting InstituteManagementSystemApplication using Java 17.0.2 with PID 692 (C:\Users\LAP-9\Documents\FrontEndArea\institute-management-system\institute-management-system\target\classes started by LAP-9 in C:\Users\LAP-9\Documents\FrontEndArea\institute-management-system\institute-management-system)
+2023-04-19 09:19:16.172 INFO  c.i.i.InstituteManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-19 09:19:17.152 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-19 09:19:17.238 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 2 JPA repository interfaces.
+2023-04-19 09:19:18.042 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-19 09:19:18.054 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-19 09:19:18.055 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-19 09:19:18.055 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-19 09:19:18.245 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-19 09:19:18.245 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2011 ms
+2023-04-19 09:19:18.822 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-19 09:19:19.091 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-19 09:19:19.375 WARN  org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-04-19 09:19:19.622 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-19 09:19:19.838 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19dac2d6
+2023-04-19 09:19:19.840 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-19 09:19:19.916 INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-19 09:19:20.918 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-19 09:19:20.936 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 09:19:21.398 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-19 09:19:21.614 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 18 mappings in 'requestMappingHandlerMapping'
+2023-04-19 09:19:22.590 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-04-19 09:19:22.601 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6fd37997, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5dc7881d, org.springframework.security.web.context.SecurityContextHolderFilter@251e2f4a, org.springframework.security.web.header.HeaderWriterFilter@27f31d91, org.springframework.web.filter.CorsFilter@590336ed, org.springframework.security.web.authentication.logout.LogoutFilter@2a9e7b4d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@a72925, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f5288c5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a9ef32e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c97c3bb, org.springframework.security.web.access.ExceptionTranslationFilter@5644f664, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78a34c47]
+2023-04-19 09:19:22.618 WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/static/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-19 09:19:22.619 INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/static/**']
+2023-04-19 09:19:22.730 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-04-19 09:19:22.793 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-04-19 09:19:23.089 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-19 09:19:23.151 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-19 09:19:23.166 INFO  c.i.i.InstituteManagementSystemApplication - Started InstituteManagementSystemApplication in 7.405 seconds (process running for 8.156)
+2023-04-19 09:19:37.160 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 09:19:37.160 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-19 09:19:37.174 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-04-19 09:19:37.174 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2023-04-19 09:19:37.174 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2023-04-19 09:19:37.177 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@47d4468a
+2023-04-19 09:19:37.177 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@553d828a
+2023-04-19 09:19:37.177 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-04-19 09:19:37.177 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+2023-04-19 09:19:37.224 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:19:37.265 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:19:37.725 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/teacher", parameters={}
+2023-04-19 09:19:37.725 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:19:37.745 INFO  c.i.i.service.TeacherService - Getting all the teachers
+2023-04-19 09:19:38.057 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:19:38.057 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.ims.institutemanagementsystem.model.Teacher@3da6cf45]]
+2023-04-19 09:19:38.139 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:19:43.256 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:19:43.256 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:19:43.456 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student/4", parameters={}
+2023-04-19 09:19:43.464 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:19:43.521 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:19:43.521 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.ims.institutemanagementsystem.model.Student@1c31e539]
+2023-04-19 09:19:43.526 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:19:47.536 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#updateStudent(int, String, String)
+2023-04-19 09:19:47.536 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#updateStudent(int, String, String)
+2023-04-19 09:19:47.756 DEBUG o.s.web.servlet.DispatcherServlet - PUT "/api/student/4?name=Ahmed&email=ahmed%40gmail.com", parameters={masked}
+2023-04-19 09:19:47.765 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#updateStudent(int, String, String)
+2023-04-19 09:19:47.838 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:19:47.846 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [Optional[com.ims.institutemanagementsystem.model.Student@63b7ce04]]
+2023-04-19 09:19:47.848 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:19:55.099 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:19:55.320 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student/4", parameters={}
+2023-04-19 09:19:55.320 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudent(int)
+2023-04-19 09:19:55.337 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:19:55.337 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.ims.institutemanagementsystem.model.Student@11001fa7]
+2023-04-19 09:19:55.337 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:20:23.513 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:20:23.706 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/teacher", parameters={}
+2023-04-19 09:20:23.714 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:20:23.716 INFO  c.i.i.service.TeacherService - Getting all the teachers
+2023-04-19 09:20:23.723 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:20:23.723 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.ims.institutemanagementsystem.model.Teacher@4f7b24]]
+2023-04-19 09:20:23.723 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:21:47.760 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 09:21:47.760 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-19 09:21:47.789 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-19 09:21:58.740 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-19 09:21:58.790 INFO  c.i.i.InstituteManagementSystemApplication - Starting InstituteManagementSystemApplication using Java 17.0.2 with PID 6968 (C:\Users\LAP-9\Documents\FrontEndArea\institute-management-system\institute-management-system\target\classes started by LAP-9 in C:\Users\LAP-9\Documents\FrontEndArea\institute-management-system\institute-management-system)
+2023-04-19 09:21:58.792 INFO  c.i.i.InstituteManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-19 09:21:59.967 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-19 09:22:00.068 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2023-04-19 09:22:01.402 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-19 09:22:01.412 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-19 09:22:01.413 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-19 09:22:01.414 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-19 09:22:01.504 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-19 09:22:01.504 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2651 ms
+2023-04-19 09:22:01.683 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-19 09:22:01.738 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-19 09:22:01.955 WARN  org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-04-19 09:22:02.114 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-19 09:22:02.302 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e2bc2f4
+2023-04-19 09:22:02.305 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-19 09:22:02.346 INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-19 09:22:03.043 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-19 09:22:03.051 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 09:22:03.532 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-19 09:22:03.812 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 18 mappings in 'requestMappingHandlerMapping'
+2023-04-19 09:22:04.758 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-04-19 09:22:04.765 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6fd37997, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5dc7881d, org.springframework.security.web.context.SecurityContextHolderFilter@251e2f4a, org.springframework.security.web.header.HeaderWriterFilter@27f31d91, org.springframework.web.filter.CorsFilter@590336ed, org.springframework.security.web.authentication.logout.LogoutFilter@2a9e7b4d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@a72925, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f5288c5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a9ef32e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c97c3bb, org.springframework.security.web.access.ExceptionTranslationFilter@5644f664, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78a34c47]
+2023-04-19 09:22:04.775 WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/static/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-19 09:22:04.775 INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/static/**']
+2023-04-19 09:22:04.849 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-04-19 09:22:04.891 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-04-19 09:22:05.043 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-19 09:22:05.070 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-19 09:22:05.081 INFO  c.i.i.InstituteManagementSystemApplication - Started InstituteManagementSystemApplication in 6.686 seconds (process running for 7.354)
+2023-04-19 09:22:15.913 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 09:22:15.921 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-19 09:22:15.921 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-04-19 09:22:15.921 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2023-04-19 09:22:15.921 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2023-04-19 09:22:15.921 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@47d4468a
+2023-04-19 09:22:15.921 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@553d828a
+2023-04-19 09:22:15.921 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-04-19 09:22:15.921 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-04-19 09:22:15.986 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:22:16.019 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:22:16.479 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/teacher", parameters={}
+2023-04-19 09:22:16.482 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:22:16.504 INFO  c.i.i.service.TeacherService - Getting all the teachers
+2023-04-19 09:22:16.780 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:22:16.785 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.ims.institutemanagementsystem.model.Teacher@78785585]]
+2023-04-19 09:22:16.865 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:22:17.346 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:22:17.560 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/teacher", parameters={}
+2023-04-19 09:22:17.562 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:22:17.563 INFO  c.i.i.service.TeacherService - Getting all the teachers
+2023-04-19 09:22:17.570 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:22:17.570 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.ims.institutemanagementsystem.model.Teacher@6e49ebfd]]
+2023-04-19 09:22:17.570 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:24:50.739 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 09:24:50.754 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-19 09:24:50.758 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-19 09:24:54.696 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-19 09:24:54.747 INFO  c.i.i.InstituteManagementSystemApplication - Starting InstituteManagementSystemApplication using Java 17.0.2 with PID 13800 (C:\Users\LAP-9\Documents\FrontEndArea\institute-management-system\institute-management-system\target\classes started by LAP-9 in C:\Users\LAP-9\Documents\FrontEndArea\institute-management-system\institute-management-system)
+2023-04-19 09:24:54.747 INFO  c.i.i.InstituteManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-19 09:24:55.980 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-19 09:24:56.042 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2023-04-19 09:24:56.761 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-19 09:24:56.776 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-19 09:24:56.776 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-19 09:24:56.776 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-19 09:24:56.886 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-19 09:24:56.886 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2088 ms
+2023-04-19 09:24:57.162 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-19 09:24:57.256 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-19 09:24:57.476 WARN  org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-04-19 09:24:57.664 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-19 09:24:57.825 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60a01cb
+2023-04-19 09:24:57.825 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-19 09:24:57.868 INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-19 09:24:58.596 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-19 09:24:58.596 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 09:24:59.067 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-19 09:24:59.329 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 18 mappings in 'requestMappingHandlerMapping'
+2023-04-19 09:25:00.276 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-04-19 09:25:00.284 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@28941a68, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24ce5d4c, org.springframework.security.web.context.SecurityContextHolderFilter@2a9e7b4d, org.springframework.security.web.header.HeaderWriterFilter@29ae2517, org.springframework.web.filter.CorsFilter@24fc9aa5, org.springframework.security.web.authentication.logout.LogoutFilter@10b5ff4d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@14ee143a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e1104f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76219fe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7369208e, org.springframework.security.web.access.ExceptionTranslationFilter@4423692a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4c6eaa65]
+2023-04-19 09:25:00.284 WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/static/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-19 09:25:00.284 INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/static/**']
+2023-04-19 09:25:00.359 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-04-19 09:25:00.413 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-04-19 09:25:00.563 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-19 09:25:00.595 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-19 09:25:00.611 INFO  c.i.i.InstituteManagementSystemApplication - Started InstituteManagementSystemApplication in 6.326 seconds (process running for 7.13)
+2023-04-19 09:25:06.651 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 09:25:06.651 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-19 09:25:06.651 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-04-19 09:25:06.651 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2023-04-19 09:25:06.651 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2023-04-19 09:25:06.651 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@31921151
+2023-04-19 09:25:06.651 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@345d641e
+2023-04-19 09:25:06.651 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-04-19 09:25:06.651 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-04-19 09:25:06.710 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:25:06.756 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:25:07.225 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/teacher", parameters={}
+2023-04-19 09:25:07.227 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:25:07.251 INFO  c.i.i.service.TeacherService - Getting all the teachers
+2023-04-19 09:25:07.573 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:25:07.576 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.ims.institutemanagementsystem.model.Teacher@519cf6a8]]
+2023-04-19 09:25:07.655 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:25:08.598 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:25:08.791 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/teacher", parameters={}
+2023-04-19 09:25:08.791 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:25:08.791 INFO  c.i.i.service.TeacherService - Getting all the teachers
+2023-04-19 09:25:08.807 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:25:08.807 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.ims.institutemanagementsystem.model.Teacher@21ed90e9]]
+2023-04-19 09:25:08.807 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:31:21.876 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 09:31:21.876 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-19 09:31:21.899 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-19 09:31:26.188 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-19 09:31:26.248 INFO  c.i.i.InstituteManagementSystemApplication - Starting InstituteManagementSystemApplication using Java 17.0.2 with PID 14416 (C:\Users\LAP-9\Documents\FrontEndArea\institute-management-system\institute-management-system\target\classes started by LAP-9 in C:\Users\LAP-9\Documents\FrontEndArea\institute-management-system\institute-management-system)
+2023-04-19 09:31:26.249 INFO  c.i.i.InstituteManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-19 09:31:27.250 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-19 09:31:27.320 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2023-04-19 09:31:28.100 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-19 09:31:28.108 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-19 09:31:28.109 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-19 09:31:28.110 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-19 09:31:28.201 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-19 09:31:28.201 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1888 ms
+2023-04-19 09:31:28.480 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-19 09:31:28.576 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-19 09:31:28.810 WARN  org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-04-19 09:31:28.981 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-19 09:31:29.228 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27afbf14
+2023-04-19 09:31:29.232 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-19 09:31:29.284 INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-19 09:31:30.063 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-19 09:31:30.070 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 09:31:30.516 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-19 09:31:30.926 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 18 mappings in 'requestMappingHandlerMapping'
+2023-04-19 09:31:32.139 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-04-19 09:31:32.143 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@63c163e1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3da55998, org.springframework.security.web.context.SecurityContextHolderFilter@4853f592, org.springframework.security.web.header.HeaderWriterFilter@37b5a51c, org.springframework.web.filter.CorsFilter@40ebb56, org.springframework.security.web.authentication.logout.LogoutFilter@180e33b0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@539bb233, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d035ab6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3407ded1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b2fc2c0, org.springframework.security.web.access.ExceptionTranslationFilter@61f08aa9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1db9c2cf]
+2023-04-19 09:31:32.155 WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/static/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-19 09:31:32.155 INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/static/**']
+2023-04-19 09:31:32.238 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-04-19 09:31:32.299 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-04-19 09:31:32.466 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-19 09:31:32.494 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-19 09:31:32.506 INFO  c.i.i.InstituteManagementSystemApplication - Started InstituteManagementSystemApplication in 6.662 seconds (process running for 7.365)
+2023-04-19 09:31:42.363 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 09:31:42.363 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-19 09:31:42.363 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-04-19 09:31:42.363 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2023-04-19 09:31:42.363 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2023-04-19 09:31:42.366 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2f98fe6f
+2023-04-19 09:31:42.366 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@344769b9
+2023-04-19 09:31:42.366 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-04-19 09:31:42.366 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2023-04-19 09:31:42.412 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:31:42.452 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:31:43.019 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/teacher", parameters={}
+2023-04-19 09:31:43.019 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:31:43.043 INFO  c.i.i.service.TeacherService - Getting all the teachers
+2023-04-19 09:31:43.342 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:31:43.342 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.ims.institutemanagementsystem.model.Teacher@78785585]]
+2023-04-19 09:31:43.452 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:31:43.867 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:31:44.073 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/teacher", parameters={}
+2023-04-19 09:31:44.073 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:31:44.073 INFO  c.i.i.service.TeacherService - Getting all the teachers
+2023-04-19 09:31:44.088 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:31:44.088 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.ims.institutemanagementsystem.model.Teacher@6e49ebfd]]
+2023-04-19 09:31:44.088 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:34:41.064 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 09:34:41.064 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-19 09:34:41.079 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-19 09:34:44.927 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-19 09:34:44.986 INFO  c.i.i.InstituteManagementSystemApplication - Starting InstituteManagementSystemApplication using Java 17.0.2 with PID 16940 (C:\Users\LAP-9\Documents\FrontEndArea\institute-management-system\institute-management-system\target\classes started by LAP-9 in C:\Users\LAP-9\Documents\FrontEndArea\institute-management-system\institute-management-system)
+2023-04-19 09:34:44.988 INFO  c.i.i.InstituteManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-19 09:34:45.931 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-19 09:34:46.017 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 2 JPA repository interfaces.
+2023-04-19 09:34:46.714 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-19 09:34:46.723 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-19 09:34:46.725 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-19 09:34:46.726 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-19 09:34:46.822 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-19 09:34:46.822 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1779 ms
+2023-04-19 09:34:47.028 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-19 09:34:47.088 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-19 09:34:47.277 WARN  org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-04-19 09:34:47.456 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-19 09:34:47.656 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4efb13f1
+2023-04-19 09:34:47.659 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-19 09:34:47.730 INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-19 09:34:48.589 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-19 09:34:48.598 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 09:34:49.035 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-19 09:34:49.293 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 18 mappings in 'requestMappingHandlerMapping'
+2023-04-19 09:34:50.233 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-04-19 09:34:50.239 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@705eb026, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8de4206, org.springframework.security.web.context.SecurityContextHolderFilter@29ae2517, org.springframework.security.web.header.HeaderWriterFilter@7fa8fff, org.springframework.web.filter.CorsFilter@10f384a2, org.springframework.security.web.authentication.logout.LogoutFilter@347f8029, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7df23848, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@254d8ef6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a9e7b4d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57fae911, org.springframework.security.web.access.ExceptionTranslationFilter@180fb796, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@443b6765]
+2023-04-19 09:34:50.244 WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/static/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-19 09:34:50.244 INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/static/**']
+2023-04-19 09:34:50.353 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-04-19 09:34:50.403 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-04-19 09:34:50.588 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-19 09:34:50.648 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-19 09:34:50.659 INFO  c.i.i.InstituteManagementSystemApplication - Started InstituteManagementSystemApplication in 6.073 seconds (process running for 6.76)
+2023-04-19 09:35:06.898 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 09:35:06.907 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-19 09:35:06.907 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-04-19 09:35:06.907 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2023-04-19 09:35:06.907 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2023-04-19 09:35:06.907 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1c7fd2e0
+2023-04-19 09:35:06.907 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6705fb02
+2023-04-19 09:35:06.907 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-04-19 09:35:06.907 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-04-19 09:35:06.980 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:35:07.029 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:35:07.528 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/teacher", parameters={}
+2023-04-19 09:35:07.545 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:35:07.571 INFO  c.i.i.service.TeacherService - Getting all the teachers
+2023-04-19 09:35:07.836 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:35:07.840 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.ims.institutemanagementsystem.model.Teacher@b76fc1e]]
+2023-04-19 09:35:07.918 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:35:09.170 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:35:09.170 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudents()
+2023-04-19 09:35:09.182 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudents()
+2023-04-19 09:35:09.388 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/teacher", parameters={}
+2023-04-19 09:35:09.388 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.TeacherController#getTeachers()
+2023-04-19 09:35:09.388 INFO  c.i.i.service.TeacherService - Getting all the teachers
+2023-04-19 09:35:09.405 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:35:09.405 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.ims.institutemanagementsystem.model.Teacher@1d991092]]
+2023-04-19 09:35:09.406 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:35:09.410 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/student", parameters={}
+2023-04-19 09:35:09.411 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ims.institutemanagementsystem.controller.StudentController#getStudents()
+2023-04-19 09:35:09.428 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-04-19 09:35:09.428 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.ims.institutemanagementsystem.model.Student@21ed90e9, com.ims.institutemanagementsystem.model.S (truncated)...]
+2023-04-19 09:35:09.434 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-04-19 09:41:24.686 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 09:41:24.734 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-19 09:41:24.774 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-19 09:47:13.320 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-19 09:47:13.383 INFO  c.i.i.InstituteManagementSystemApplication - Starting InstituteManagementSystemApplication using Java 17.0.2 with PID 13052 (C:\Users\LAP-9\Documents\FrontEndArea\institute-management-system\institute-management-system\target\classes started by LAP-9 in C:\Users\LAP-9\Documents\FrontEndArea\institute-management-system\institute-management-system)
+2023-04-19 09:47:13.385 INFO  c.i.i.InstituteManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-19 09:47:14.627 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-19 09:47:14.745 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 100 ms. Found 2 JPA repository interfaces.
+2023-04-19 09:47:15.662 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-19 09:47:15.681 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-19 09:47:15.682 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-19 09:47:15.683 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-19 09:47:15.828 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-19 09:47:15.828 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2378 ms
+2023-04-19 09:47:16.067 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-19 09:47:16.161 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-19 09:47:16.409 WARN  org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-04-19 09:47:16.610 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-19 09:47:16.903 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cfcac13
+2023-04-19 09:47:16.906 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-19 09:47:17.019 INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-19 09:47:17.878 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-19 09:47:17.890 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 09:47:18.444 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-19 09:47:18.783 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 18 mappings in 'requestMappingHandlerMapping'
+2023-04-19 09:47:19.716 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-04-19 09:47:19.721 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@693ed09d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4fc8163, org.springframework.security.web.context.SecurityContextHolderFilter@20462820, org.springframework.security.web.header.HeaderWriterFilter@5b86f4cb, org.springframework.web.filter.CorsFilter@6c26e588, org.springframework.security.web.authentication.logout.LogoutFilter@31de8099, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@75df4b1d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@384f0e32, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e826fd4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62f73b0c, org.springframework.security.web.access.ExceptionTranslationFilter@633cad4d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@29b0c169]
+2023-04-19 09:47:19.725 WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/static/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-19 09:47:19.725 INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/static/**']
+2023-04-19 09:47:19.872 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-04-19 09:47:19.937 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-04-19 09:47:20.266 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-19 09:47:20.300 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-19 09:47:20.316 INFO  c.i.i.InstituteManagementSystemApplication - Started InstituteManagementSystemApplication in 7.475 seconds (process running for 8.549)
