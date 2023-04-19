@@ -26,10 +26,10 @@ submitBtn.addEventListener("click", function(event){
       .then(response => {
         if (response.ok) {
           localStorage.setItem("Authorization", auth);
-          window.location.href = "index.html";
+          window.location.href = "./index.html";
         } else{
           alert("Invalid username or password.");
-          window.location.href = "/login.html";
+          window.location.href = "./login.html";
         }
       })
       .catch(error => {
@@ -37,7 +37,7 @@ submitBtn.addEventListener("click", function(event){
           alert("Invalid username or password.");
           console.log(error.response.status);
           // redirect the user to the login page
-          window.location.href = "/login.html";
+          window.location.href = "./login.html";
         } else {
           console.log(error);
         }

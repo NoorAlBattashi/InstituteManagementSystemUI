@@ -23,11 +23,11 @@ document.querySelector('#submit').addEventListener('click', async (e) => {
       // show success message to the user
       const successMessage = `Teacher ${responseData.name} created successfully with email ${responseData.email}.`;
       alert(successMessage);
-
+      
       console.log('Teacher created:', responseData);
     } else if (response.status === 401) {
       // redirect to login page
-      window.location.replace('/login.html');
+      window.location.replace('../login.html');
     }
   } catch (error) {
     console.error('Error creating teacher:', error);

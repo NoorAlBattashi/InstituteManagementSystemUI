@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const id = searchInput.value;
         const auth = localStorage.getItem("Authorization");
-        fetch(`http://localhost:8080/api/teacher/${id}`, {
+        fetch(`http://localhost:8080/api/student/${id}`, {
             method: 'GET',
             headers: {
                 "Content-Type": "application/json;charset=UTF-8",
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
             .then(response => {
                 if (response.status === 401) {
-                    window.location.href = '/login.html';
+                    window.location.href = '../login.html';
                 }
                 return response.json();
             })
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // create a new img element
                 const img = document.createElement('img');
                 // set the src attribute of the image element
-                img.src = "/staff_images/" + data.imageName;
+                img.src = "./student_images/" + data.imageName;
 
                 // create a new td element for the image
                 const tdImage = document.createElement('td');
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             })
             .catch(error => {
-                alert(`Staff not found`);
+                alert(`Student not found`);
                 console.error(error);
             });
     });

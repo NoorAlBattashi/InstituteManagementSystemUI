@@ -8,7 +8,7 @@ fetch('http://localhost:8080/api/teacher', {
 })
 .then(response => {
     if (response.status === 401){
-        window.location.href = '/login.html';
+        window.location.href = './login.html';
     }
     return response.json();
 })
@@ -18,7 +18,7 @@ fetch('http://localhost:8080/api/teacher', {
     // create a new img element
     const img = document.createElement('img');
     // set the src attribute of the image element
-    img.src = "/staff_images/" + teacher.imageName;
+    img.src = "/staff/staff_images/" + teacher.imageName;
 
     // create a new td element for the image
     const tdImage = document.createElement('td');

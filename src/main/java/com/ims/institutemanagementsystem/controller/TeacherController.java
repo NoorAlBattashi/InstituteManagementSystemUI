@@ -68,7 +68,7 @@ public class TeacherController {
 
             if (image != null) {
                 savedTeacher.imageName = Integer.toString(savedTeacher.id) + "_" + savedTeacher.name + ".jpg";
-                FileUtils.writeByteArrayToFile(new File("./src/main/resources/static/staff_images/" + savedTeacher.imageName), image.getBytes());
+                FileUtils.writeByteArrayToFile(new File("./src/main/resources/static/staff/staff_images/" + savedTeacher.imageName), image.getBytes());
                 teacherService.updateParticularTeacher(savedTeacher.id, savedTeacher);
             }
 

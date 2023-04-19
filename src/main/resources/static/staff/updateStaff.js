@@ -14,7 +14,7 @@ searchForm.addEventListener('submit', async (event) =>{
   });
 
   if (response.status === 401){
-    window.location.href = '/login.html'; // Redirect to login page
+    window.location.href = '../login.html'; // Redirect to login page
   }else{
   const data = await response.json();
   if(response.ok){
@@ -40,7 +40,7 @@ resultForm.addEventListener('submit', async(event) => {
     },
   });
   if(response.status === 401){
-    window.location.href = '/login.html'; // Redirect to login page
+    window.location.href = '../login.html'; // Redirect to login page
   }else{
   const data = await response.json();
   console.log(data);

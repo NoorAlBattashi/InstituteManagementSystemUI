@@ -25,7 +25,10 @@ public class SecurityConfiguration {
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeRequests((authz) -> authz
                         .requestMatchers(new AntPathRequestMatcher("/api/**")).authenticated()
-                        .requestMatchers(new AntPathRequestMatcher("/static/student_images/**")).authenticated()
+                        .requestMatchers(new AntPathRequestMatcher("/static/staff_images/**")).authenticated()
+                        .requestMatchers(new AntPathRequestMatcher("/static/staff/**")).authenticated()
+                        .requestMatchers(new AntPathRequestMatcher("/static/student/**")).authenticated()
+                        .requestMatchers(new AntPathRequestMatcher("/static/student/student_images/**")).authenticated()
                         .anyRequest().permitAll()
                 )
                 .httpBasic(withDefaults())
